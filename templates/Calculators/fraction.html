@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fraction Calculator</title>
+</head>
+<body>
+    <h1>Fraction Calculator</h1>
+
+    <form method="POST" onsubmit="myFunction(); return false;">
+        <label for="operation">Operation:</label>
+        <select name="operation" id="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+        </select>
+        <br>
+
+        <label for="numerator1">Fraction 1 Numerator:</label>
+        <input type="number" id="numerator1" required>
+        <label for="denominator1">Denominator:</label>
+        <input type="number" id="denominator1" required>
+        <br>
+
+        <label for "numerator2">Fraction 2 Numerator:</label>
+        <input type="number" id="numerator2" required>
+        <label for="denominator2">Denominator:</label>
+        <input type="number" id="denominator2" required>
+        <br>
+
+        <input type="submit" value="Calculate">
+    </form>
+    <p id="step1"></p><br>
+    <p id="step2"></p><br>
+    <p id="step3 ="></p>
+    <p id="res"></p><br>
+
+    <script>
+        src="fraction_calc.js"
+    </script>
+</body>
+</html>
